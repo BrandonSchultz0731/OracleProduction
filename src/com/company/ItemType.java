@@ -1,3 +1,10 @@
+/*
+Brandon Schultz
+This is the enum class, ItemType, used to create a list of
+just constants that will be used in the program
+ */
+
+
 package com.company;
 
 public enum ItemType {
@@ -9,10 +16,12 @@ public enum ItemType {
 
   private final String code;
 
-  ItemType(String code){
+  //like a constructor
+  ItemType(String code) {
     this.code = code;
   }
-  public String getCode(){
+
+  public String getCode() {
     return code;
   }
 }
