@@ -1,6 +1,6 @@
-/*
+package com.company;/*
 Brandon Schultz
-This is the abstract class, Product, used to implement all the methods
+This is the abstract class, com.company.Product, used to implement all the methods
 defined in the Interface class.
  */
 

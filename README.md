@@ -8,7 +8,7 @@ This type of class is called an Interface. An interface is similar to that of an
 of the class, however, unlike abstract classes, you can not create method bodies in an interface. Instead, an interface is used to
 define methods to be used in other classes, like abstract classes.
 
-Abstract Class Product:
+Abstract Class com.company.Product:
 This class is an abstract class, which means that this class can not be instantiated, so no object can be created from this
 class. The methods used in this class are from the ones defined in our Item interface, so now we implement them in this class.
 
