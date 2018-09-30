@@ -16,7 +16,7 @@ public abstract class Product implements Item {
   private String name;
   private int currentProductionNumber;
 
-  public Product(String n, int num) {
+  public Product(String n) {
     System.out.println("test");
     name = n;
     serialNumber = currentProductionNumber++; //post-fix notation, assigns old value, then increment
