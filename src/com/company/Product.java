@@ -5,22 +5,23 @@ defined in the Interface class.
  */
 
 
-import com.company.Item;
+
 import java.util.Date;
 
 public abstract class Product implements Item {
 
   private int serialNumber;
-  //private String manufacturer;
+  private String manufacturer;
   private Date manufacturedOn;
   private String name;
-  private int currentProductionNumber;
+  private static int currentProductionNumber;
 
   public Product(String n) {
     System.out.println("test");
     name = n;
     serialNumber = currentProductionNumber++; //post-fix notation, assigns old value, then increment
     manufacturedOn = new Date();
+    manufacturer = Item.manufacturer;
   }
 
   public void setProductionNumber(int p) {
