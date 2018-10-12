@@ -1,4 +1,5 @@
-package com.company;/*
+package com.company;
+/*
 Brandon Schultz
 This is the abstract class, com.company.Product, used to implement all the methods
 defined in the Interface class.
@@ -6,6 +7,7 @@ defined in the Interface class.
 
 
 
+import com.company.Item;
 import java.util.Date;
 
 public abstract class Product implements Item {
@@ -14,10 +16,9 @@ public abstract class Product implements Item {
   private String manufacturer;
   private Date manufacturedOn;
   private String name;
-  private static int currentProductionNumber;
+  private static int currentProductionNumber = 1;
 
   public Product(String n) {
-    System.out.println("test");
     name = n;
     serialNumber = currentProductionNumber++; //post-fix notation, assigns old value, then increment
     manufacturedOn = new Date();
@@ -45,9 +46,9 @@ public abstract class Product implements Item {
   }
 
   public String toString() {
-    return "Manufacturer  : " + manufacturer + "\n"
-        + "Serial Number  : " + serialNumber + "\n"
-        + "Date           : " + manufacturedOn + "\n"
-        + "Name           : " + name;
+    return "Manufacturer : " + manufacturer + "\n"
+        + "Serial Number : " + serialNumber + "\n"
+        + "Date : " + manufacturedOn + "\n"
+        + "Name : " + name + "\n";
   }
 }

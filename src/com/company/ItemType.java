@@ -14,7 +14,7 @@ public enum ItemType {
   AUDIO_MOBILE("AM"),
   VISUAL_MOBILE("VM");
 
-  private final String code;
+  public final String code;
 
   //like a constructor
   ItemType(String code) {
