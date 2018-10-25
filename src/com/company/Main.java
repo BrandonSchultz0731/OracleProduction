@@ -10,7 +10,9 @@ public class Main {
   public static void main(String args[]) {
 
     //testProduct();
-    AudioPlayerDriver.testAudioPlayer();
+    //AudioPlayerDriver.testAudioPlayer();
+    MoviePlayerDriver.testMoviePlayer();
+    PlayerDriver.testPlayer();
   }
 
   public static void testProduct() {

@@ -2,12 +2,13 @@ package com.company;
 
 public class MoviePlayerDriver {
 
-  public static void main(String[] args) {
-    MoviePlayer m1 = new MoviePlayer("Brandon");
-    System.out.println(m1.toString());
-    AudioPlayer a1 = new AudioPlayer("Testing","Good");
-    System.out.println(a1.toString());
+  public static void testMoviePlayer() {
+    MoviePlayer m1 = new MoviePlayer("DBPOWER MK101",new Screen("720x480",40,22),MonitorType.LCD);
+    System.out.println(m1.toString1());
+    MoviePlayer m2 = new MoviePlayer("Pyle PDV156BK",new Screen("1366x768",40,22),MonitorType.LED);
+    System.out.println(m2.toString1());
 
   }
 
 }
+
