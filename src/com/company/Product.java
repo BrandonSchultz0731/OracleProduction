@@ -10,7 +10,7 @@ defined in the Interface class.
 import com.company.Item;
 import java.util.Date;
 
-public abstract class Product implements Item {
+public abstract class Product implements Item,Comparable<Product>{
 
   private int serialNumber;
   private String manufacturer;
@@ -50,5 +50,10 @@ public abstract class Product implements Item {
         + "Serial Number : " + serialNumber + "\n"
         + "Date : " + manufacturedOn + "\n"
         + "Name : " + name + "\n";
+  }
+
+  @Override
+  public int compareTo(Product o) {
+    return name.compareTo(o.getName());
   }
 }

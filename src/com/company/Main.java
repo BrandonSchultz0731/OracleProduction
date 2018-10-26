@@ -11,8 +11,9 @@ public class Main {
 
     //testProduct();
     //AudioPlayerDriver.testAudioPlayer();
-    MoviePlayerDriver.testMoviePlayer();
-    PlayerDriver.testPlayer();
+//    MoviePlayerDriver.testMoviePlayer();
+//    PlayerDriver.testPlayer();
+    CollectionDriver.testCollection();
   }
 
   public static void testProduct() {
