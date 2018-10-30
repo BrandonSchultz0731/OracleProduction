@@ -28,7 +28,7 @@ public class Main {
     widgets.add(new Widget("in add"));
     widgets.add(new Widget("in add2"));
 
-    for (Widget w : widgets){
+    for (Widget w : widgets) {
       System.out.println(w.toString());
     }
 
