@@ -100,6 +100,6 @@ public class EmployeeInfo {
 
   @Override
   public String toString() {
-    return "(" + code + ", " + deptId + ")";
+    return "Employee Code : " + code + "\n" + "Department Number : " + deptId;
   }
 }

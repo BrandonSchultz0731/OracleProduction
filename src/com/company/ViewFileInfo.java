@@ -9,10 +9,10 @@ public class ViewFileInfo {
   public static void main(String[] args) {
 
     try {
-      FileReader fr = new FileReader("/LineTests/TestResults.txt");
+      FileReader fr = new FileReader("/Users/brandonschultz/LineTests/TestResults.txt");
       int i;
       while((i = fr.read()) != -1){
-        System.out.println((char)i);
+        System.out.print((char)i);
       }
     } catch (FileNotFoundException e) {
       e.printStackTrace();

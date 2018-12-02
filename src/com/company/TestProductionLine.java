@@ -22,6 +22,6 @@ public class TestProductionLine {
     products.add(a2);
     products.add(m1);
     products.add(m2);
-    ProcessFiles p = new ProcessFiles(e,products);
+    //ProcessFiles p = new ProcessFiles(e,products);
   }
 }
