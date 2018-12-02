@@ -46,4 +46,11 @@ Enums are nothing more than the ability to represent a list of constants that ca
 By creating a list, we can use these values in another class as constants, which we will soon implement in later steps.
 
 CollectionDriver Class
-This class shows that we can create objects of type AudioPlayer and MoviePlayer and add each of those objects into an ArrayList. From that ArrayList, we are able to sort the items in the list using the Collections.sort() method in which we put the ArrayList in. To sort this ArrayList, we implement the Comparable<> class in Product and override thr compareTo() method, which then returns an int based on the sorting of whats in the ArrayList by name;
+This class shows that we can create objects of type AudioPlayer and MoviePlayer and add each of those objects into an ArrayList. From that ArrayList, we are able to sort the items in the list using the Collections.sort() method in which we put the ArrayList in. To sort this ArrayList, we implement the Comparable<> class in Product and override thr compareTo() method, which then returns an int based on the sorting of whats in the ArrayList by name.
+
+AudioPlayer Class:
+This class extends the Product class which allows for the creation of an AudioPlayer object. Methods specific to AuidoPlayer's will be present in this class.
+
+MoviePlayer Class:
+This class extends the Product class which allows for the creation of an MoviePlayer object. Methods specific to MoviePlayer's will be present in this class.
+
