@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class TestProductionLine {
 
   public static void main(String[] args) {
-    EmployeeInfo e = new EmployeeInfo();
+    //EmployeeInfo e = new EmployeeInfo();
 //    System.out.println(e.getCode());
 //    System.out.println(e.toString());
     AudioPlayer a1 = new AudioPlayer("iPod Mini", "MP3");

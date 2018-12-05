@@ -7,14 +7,14 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-  static Scanner scan = new Scanner(System.in);
+
+  static Scanner scan = new Scanner(System.in,"UTF-8");
   static ArrayList<Product> products = new ArrayList<>();
-  static boolean start = true,start1 = true;
+  static boolean start = true, start1 = true;
   static String name;
   static int choice;
 
   public static void main(String args[]) {
-
 
     //testProduct();
     //AudioPlayerDriver.testAudioPlayer();
@@ -22,25 +22,22 @@ public class Main {
 //    PlayerDriver.testPlayer();
     //CollectionDriver.testCollection();
 
-
-
     System.out.println("Welcome to my program that creates products specified by the user...\n");
 
-
-    while(start1){
-      System.out.println("Enter 1 to: Add a product");
+    while (start1) {
+      System.out.println("\nEnter 1 to: Add a product");
       System.out.println("Enter 2 to: Display total items produced");
       System.out.println("Enter 3 to: Display collection of all items");
       System.out.println("Enter any other number to quit");
-      try{
+      try {
         choice = scan.nextInt();
-        switch (choice){
+        switch (choice) {
           case 1:
             AddProduct();
             break;
           case 2:
             //display total items in array
-            System.out.println("The number of products added so far is: " + products.size());
+            System.out.println("\nThe number of products added so far is: " + products.size());
             break;
           case 3:
             //display collection of items
@@ -50,14 +47,13 @@ public class Main {
             //System.out.println("Invalid input, did not enter between 1 and 3");
             start1 = false;
         }
-      }catch (Exception e){
+      } catch (Exception e) {
         System.out.println("Didn't enter number, try again");
         scan.nextLine();
       }
 
 
     }
-
 
 
   }
@@ -89,40 +85,61 @@ public class Main {
     System.out.print("Please enter audio spec (ex. MP3,WAV...): ");
     audioSpec = scan.next();
 
-    AudioPlayer a = new AudioPlayer(name,audioSpec);
+    AudioPlayer a = new AudioPlayer(name, audioSpec);
     products.add(a);
 
     //CollectionDriver.print(products);
-    System.out.println("AudioPlayer has been added successfully!");
+    System.out.println("\nAudioPlayer has been added successfully!");
     System.out.println();
   }
 
   private static void CreateMoviePlayer(String name) {
-    String screenResolution,monitorType;
-    int refreshRate,responseTime;
+    boolean valid = true;
+    String screenResolution, monitorType;
+    int refreshRate = 0, responseTime = 0;
     System.out.print("Please enter a screen resolution (ex. 720x1080): ");
     screenResolution = scan.next();
-    System.out.print("Please enter Refresh Rate: ");
-    refreshRate = scan.nextInt();
-    System.out.print("Please enter response time: ");
-    responseTime = scan.nextInt();
+    while(valid){
+      try{
+        System.out.print("Please enter Refresh Rate: ");
+        refreshRate = scan.nextInt();
+        valid = false;
+      }catch (Exception e){
+        System.out.println("\nInvalid input. Please enter a number for refresh rate\n");
+        scan.nextLine();
+      }
+    }
+    valid = true;
+    while(valid){
+      try{
+        System.out.print("Please enter response time: ");
+        responseTime = scan.nextInt();
+        valid = false;
+      }catch (Exception e){
+        System.out.println("\nInvalid input. Please enter a number for response time\n");
+        scan.nextLine();
+      }
+    }
+
     System.out.print("Please enter LED or LCD: ");
     monitorType = scan.next();
 
-    switch (monitorType.toUpperCase()){
+    switch (monitorType.toUpperCase()) {
       case "LED":
-        MoviePlayer m = new MoviePlayer(name,new Screen(screenResolution,refreshRate,responseTime),MonitorType.LED);
+        MoviePlayer m = new MoviePlayer(name,
+            new Screen(screenResolution, refreshRate, responseTime), MonitorType.LED);
         products.add(m);
         break;
       case "LCD":
-        MoviePlayer m1 = new MoviePlayer(name,new Screen(screenResolution,refreshRate,responseTime),MonitorType.LCD);
+        MoviePlayer m1 = new MoviePlayer(name,
+            new Screen(screenResolution, refreshRate, responseTime), MonitorType.LCD);
         products.add(m1);
         break;
-        default:
-          System.out.println("WHOOPS");
+      default:
+        System.out.println("WHOOPS");
     }
     //CollectionDriver.print(products);
-    System.out.println("MoviePlayer has been added successfully!");
+    System.out.println("\nMoviePlayer has been added successfully!");
     System.out.println();
 
 

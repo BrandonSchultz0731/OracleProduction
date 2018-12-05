@@ -1,9 +1,12 @@
 package com.company;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.io.Writer;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -55,7 +58,9 @@ public class ProcessFiles {
 //    p2 = Paths.get(p.toUri() + "TestResults.txt");
 //    Files.write(p2,products.toString().getBytes());
 
-    FileWriter  writer = new FileWriter(p3.toString(),true);
+    //FileWriter  writer = new FileWriter(p3.toString(),true);
+    File file = new File(p3.toString());
+    Writer writer = new OutputStreamWriter(new FileOutputStream(file),"UTF-8");
     PrintWriter printWriter = new PrintWriter(writer);
 
 

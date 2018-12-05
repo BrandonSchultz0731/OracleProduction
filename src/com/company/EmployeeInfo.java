@@ -9,11 +9,10 @@ public class EmployeeInfo {
   private String code;
   private String deptId;
   private Pattern p;
-  private Scanner in;
+  private Scanner in = new Scanner(System.in,"UTF-8");
 
 
   public EmployeeInfo() {
-    in = new Scanner(System.in);
     setName();
     p = Pattern.compile("[A-Z][a-z]{3}[0-9]{2}");
     setDeptId();

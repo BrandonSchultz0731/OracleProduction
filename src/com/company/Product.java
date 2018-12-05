@@ -25,8 +25,13 @@ public abstract class Product implements Item,Comparable<Product>{
     manufacturer = Item.manufacturer;
   }
 
+  public static void staticSetProduction(int a){
+    Product.currentProductionNumber = a;
+  }
+
   public void setProductionNumber(int p) {
-    currentProductionNumber = p;
+//    Product.currentProductionNumber = p;
+    staticSetProduction(p);
   }
 
   public void setName(String n) {
