@@ -1,3 +1,11 @@
+/*
+Brandon Schultz
+5 December, 2018
+
+This AudioPlayer class allows for the creation of an AudioPlayer object to be added
+as a product.
+ */
+
 package com.company;
 
 import com.company.ItemType;

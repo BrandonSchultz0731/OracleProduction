@@ -1,3 +1,11 @@
+/*
+Brandon Schultz
+5 December, 2018
+
+This MoviePlayerDriver class is primarily used only to test the MoviePlayer class and make
+sure the methods of the class are functioning properly.
+ */
+
 package com.company;
 
 public class MoviePlayerDriver {

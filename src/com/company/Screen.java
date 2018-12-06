@@ -1,3 +1,11 @@
+/*
+Brandon Schultz
+5 December, 2018
+
+This Screen class is used to define the resolution, refresh rate, and response time. The toString
+method defined in this classes in order to display the 3 variables.
+ */
+
 package com.company;
 
 public class Screen implements ScreenSpec {

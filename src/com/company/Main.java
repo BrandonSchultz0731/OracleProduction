@@ -1,3 +1,12 @@
+/*
+Brandon Schultz
+5 December, 2018
+
+This is the main class, where program execution starts. This class is the heart of the program.
+Because this is a menu-based console driven program, this class directs the user on what
+to enter into the keyboard so they can add as many products as they'd like.
+ */
+
 package com.company;
 
 import com.company.AudioPlayerDriver;

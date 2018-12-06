@@ -1,5 +1,12 @@
-package com.company;
+/*
+Brandon Schultz
+5 December, 2018
 
+This class's purpose is only to test the methods implemented in both the AudioPlayer and
+MoviePlayer.
+ */
+
+package com.company;
 
 public class PlayerDriver {
 

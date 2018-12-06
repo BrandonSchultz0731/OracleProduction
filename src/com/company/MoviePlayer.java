@@ -1,3 +1,11 @@
+/*
+Brandon Schultz
+5 December, 2018
+
+This MoviePlayer class allows for the creation of an MoviePlayer object to be added
+as a product. Methods specific to MoviePlayers are implemented here.
+ */
+
 package com.company;
 
 public class MoviePlayer extends Product implements MultimediaControl {

@@ -1,3 +1,13 @@
+/*
+Brandon Schultz
+5 December, 2018
+
+This EmployeeInfo class creates the necessary info for creating an Employee. This class takes in
+an Employee name, then creates an Employee code from the name given if the name is valid. It then
+asks to make a DeptID and makes sure the DeptID entered follows the correct pattern. If not, then
+a general DeptID is given.
+ */
+
 package com.company;
 
 import java.util.Scanner;

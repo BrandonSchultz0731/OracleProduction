@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.company</OriginalElement>
+  <nodes>
+    <node x="0.0" y="492.0">com.company.MoviePlayer</node>
+    <node x="627.0" y="0.0">com.company.EmployeeInfo</node>
+    <node x="723.0" y="721.0">com.company.CollectionDriver</node>
+    <node x="540.0" y="721.0">com.company.ItemType</node>
+    <node x="0.0" y="1125.0">com.company.PlayerDriver</node>
+    <node x="0.0" y="1029.0">com.company.AudioPlayerDriver</node>
+    <node x="250.0" y="1029.0">com.company.MoviePlayerDriver</node>
+    <node x="989.0" y="0.0">com.company.Main</node>
+    <node x="214.0" y="721.0">com.company.ProcessFiles</node>
+    <node x="306.5" y="0.0">com.company.Item</node>
+    <node x="500.0" y="1029.0">com.company.ScreenDriver</node>
+    <node x="289.5" y="191.0">com.company.Product</node>
+    <node x="5.5" y="721.0">com.company.ScreenSpec</node>
+    <node x="984.0" y="721.0">com.company.MonitorType</node>
+    <node x="16.75" y="258.0">com.company.MultimediaControl</node>
+    <node x="729.0" y="1029.0">com.company.ViewFileInfo</node>
+    <node x="958.0" y="1029.0">com.company.TestProductionLine</node>
+    <node x="490.0" y="569.5">com.company.Widget</node>
+    <node x="0.0" y="866.0">com.company.Screen</node>
+    <node x="247.99999999999997" y="492.0">com.company.AudioPlayer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.company.Product" target="com.company.Item">
+      <point x="0.0" y="-125.5" />
+      <point x="0.0" y="70.5" />
+    </edge>
+    <edge source="com.company.AudioPlayer" target="com.company.Product">
+      <point x="55.5" y="-92.0" />
+      <point x="0.0" y="125.5" />
+    </edge>
+    <edge source="com.company.AudioPlayer" target="com.company.MultimediaControl">
+      <point x="-55.5" y="-92.0" />
+      <point x="303.5" y="462.0" />
+      <point x="137.5" y="462.0" />
+      <point x="40.25" y="58.5" />
+    </edge>
+    <edge source="com.company.MoviePlayer" target="com.company.MultimediaControl">
+      <point x="-57.0" y="-92.0" />
+      <point x="-40.25" y="58.5" />
+    </edge>
+    <edge source="com.company.Widget" target="com.company.Product">
+      <point x="0.0" y="-14.5" />
+      <point x="536.0" y="472.0" />
+      <point x="497.83333333333326" y="472.0" />
+      <point x="83.33333333333331" y="125.5" />
+    </edge>
+    <edge source="com.company.Screen" target="com.company.ScreenSpec">
+      <point x="0.0" y="-59.0" />
+      <point x="0.0" y="47.5" />
+    </edge>
+    <edge source="com.company.MoviePlayer" target="com.company.Product">
+      <point x="57.0" y="-92.0" />
+      <point x="171.0" y="472.0" />
+      <point x="331.16666666666663" y="472.0" />
+      <point x="-83.33333333333331" y="125.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8727634194831014" x="550.5193621867882" y="231.5" />
+  <SelectedNodes>
+    <node>com.company.AudioPlayer</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

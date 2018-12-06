@@ -1,11 +1,14 @@
 /*
 Brandon Schultz
+5 December, 2018
+
 This is the Interface class, Item, used to define all the methods and
 variables used in the abstract class.
  */
 
 
 package com.company;
+
 
 import java.util.Date;
 

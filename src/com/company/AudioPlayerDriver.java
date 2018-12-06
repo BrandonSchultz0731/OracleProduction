@@ -1,5 +1,12 @@
-package com.company;
+/*
+Brandon Schultz
+5 December, 2018
 
+This AudioPlayerDriver class allows the programmer to test the AudioPlayer class and testing
+to make sure methods are working properly.
+ */
+
+package com.company;
 
 public class AudioPlayerDriver {
 

@@ -1,3 +1,11 @@
+/*
+Brandon Schultz
+5 December, 2018
+
+This TestProductionLine class creates AudioPlayer and MoviePlayer products and adds them to an
+ArrayList of Products.
+ */
+
 package com.company;
 
 import java.util.ArrayList;

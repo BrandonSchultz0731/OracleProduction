@@ -1,3 +1,11 @@
+/*
+Brandon Schultz
+5 December, 2018
+
+This ViewFileInfo class can read a text file to retrieve information that is written to the
+designated text file.
+ */
+
 package com.company;
 
 import java.io.FileInputStream;

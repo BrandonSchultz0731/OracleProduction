@@ -1,11 +1,12 @@
-package com.company;
 /*
 Brandon Schultz
+5 December, 2018
+
 This is the abstract class, com.company.Product, used to implement all the methods
 defined in the Interface class.
  */
 
-
+package com.company;
 
 import com.company.Item;
 import java.util.Date;

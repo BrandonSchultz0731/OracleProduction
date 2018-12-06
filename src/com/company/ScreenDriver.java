@@ -1,3 +1,10 @@
+/*
+Brandon Schultz
+5 December, 2018
+
+The ScreenDriver class is used only to test the methods and variables inside the Screen class.
+ */
+
 package com.company;
 
 public class ScreenDriver {

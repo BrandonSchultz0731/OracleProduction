@@ -1,3 +1,11 @@
+/*
+Brandon Schultz
+5 December, 2018
+
+This class is used to specifically write to a file, called "TestResults.txt". The information that
+is written to the file is the product that is created.
+ */
+
 package com.company;
 
 import java.io.File;

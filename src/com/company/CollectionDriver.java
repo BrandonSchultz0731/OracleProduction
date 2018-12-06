@@ -1,3 +1,12 @@
+/*
+Brandon Schultz
+5 December, 2018
+
+This CollectionDriver class tests the combination of both AudioPlayer and MoviePlayer objects
+by calling the constructor for both classes. Those objects are put into a product ArrayList and
+stored as products. The products are then sorted and printed to the console.
+ */
+
 package com.company;
 
 import java.util.ArrayList;
