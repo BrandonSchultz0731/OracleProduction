@@ -22,16 +22,16 @@ public class ViewFileInfo {
 
     try {
       //FileReader fr = new FileReader("/Users/brandonschultz/LineTests/TestResults.txt");
-      InputStream inputStream = new FileInputStream("/Users/brandonschultz/LineTests/TestResults.txt");
-      Reader fr = new InputStreamReader(inputStream,"UTF-8");
+      InputStream inputStream = new FileInputStream(
+          "/Users/brandonschultz/LineTests/TestResults.txt");
+      Reader fr = new InputStreamReader(inputStream, "UTF-8");
       int i;
-      while((i = fr.read()) != -1){
-        System.out.print((char)i);
+      while ((i = fr.read()) != -1) {
+        System.out.print((char) i);
       }
     } catch (FileNotFoundException e) {
       e.printStackTrace();
-    }
-    catch (IOException e){
+    } catch (IOException e) {
       System.out.println("Cant read");
     }
 

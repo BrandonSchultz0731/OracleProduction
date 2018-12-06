@@ -10,10 +10,17 @@ package com.company;
 
 public class MoviePlayer extends Product implements MultimediaControl {
 
+  /**
+   * type of screen type of monitor
+   */
   Screen screen;
   MonitorType monitorType;
 
-
+  /**
+   * @param name of product
+   * @param screen type of screen
+   * @param monitorType type of monitor
+   */
   MoviePlayer(String name, Screen screen, MonitorType monitorType) {
     super(name);
     this.screen = screen;
@@ -36,6 +43,9 @@ public class MoviePlayer extends Product implements MultimediaControl {
     System.out.println("Next movie");
   }
 
+  /**
+   * @return formated string output
+   */
   public String toString() {
     return super.toString() +
         "Screen : " + screen +

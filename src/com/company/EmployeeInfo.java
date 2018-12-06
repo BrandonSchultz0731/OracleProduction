@@ -15,11 +15,14 @@ import java.util.regex.Pattern;
 
 public class EmployeeInfo {
 
+  /**
+   * name of Employee Code name of Employee Department ID of Employee Pattern for DeptID
+   */
   private StringBuilder name;
   private String code;
   private String deptId;
   private Pattern p;
-  private Scanner in = new Scanner(System.in,"UTF-8");
+  private Scanner in = new Scanner(System.in, "UTF-8");
 
 
   public EmployeeInfo() {
@@ -45,7 +48,9 @@ public class EmployeeInfo {
     return code;
   }
 
-
+  /**
+   * @param name of Employee
+   */
   private void createEmployeeCode(StringBuilder name) {
     if (checkName(name)) { //valid, has space
       code = name.substring(0, 1) + name.substring(name.indexOf(" ") + 1);
@@ -55,6 +60,9 @@ public class EmployeeInfo {
 
   }
 
+  /**
+   * @return name of Emplyee
+   */
   private String inputName() {
     String nameString;
     System.out.println("Please enter your first and last name");
@@ -64,6 +72,10 @@ public class EmployeeInfo {
 
   }
 
+  /**
+   * @param name of Employee
+   * @return true/false if name is valid
+   */
   private boolean checkName(StringBuilder name) {
     if (name.indexOf(" ") > 0) {
       return true;
@@ -72,10 +84,13 @@ public class EmployeeInfo {
     }
   }
 
+  /**
+   * @return Department ID
+   */
   public String getDeptId() {
     System.out.println("Please enter a Dept ID");
     deptId = in.nextLine();
-    if(!validId(deptId)){
+    if (!validId(deptId)) {
       deptId = "None01";
     }
     return deptId;
@@ -90,6 +105,10 @@ public class EmployeeInfo {
     return null;
   }
 
+  /**
+   * @param id of Employee
+   * @return true/false if ID is valid
+   */
   private boolean validId(String id) {
     if (p.matcher(id).matches()) {
       deptId = reverseString(id);
@@ -99,14 +118,21 @@ public class EmployeeInfo {
     }
   }
 
-  public String reverseString(String id){
+  /**
+   * @param id of Employee
+   * @return Department ID
+   */
+  public String reverseString(String id) {
     deptId = "";
-    for(int i = id.length() - 1; i >= 0; i--){
+    for (int i = id.length() - 1; i >= 0; i--) {
       deptId = deptId + id.charAt(i);
     }
     return deptId;
   }
 
+  /**
+   * @return formatted string output
+   */
   @Override
   public String toString() {
     return "Employee Code : " + code + "\n" + "Department Number : " + deptId;

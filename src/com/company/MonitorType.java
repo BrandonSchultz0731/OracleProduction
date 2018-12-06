@@ -9,5 +9,5 @@ just constants that will be used in the program
 package com.company;
 
 public enum MonitorType {
-  LCD,LED
+  LCD, LED
 }

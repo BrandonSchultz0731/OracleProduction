@@ -23,24 +23,27 @@ import java.util.Locale;
 
 public class ProcessFiles {
 
-  private Path p,p2,p3;
+  /**
+   * Paths for file
+   */
+  private Path p, p2, p3;
 
-  public ProcessFiles(EmployeeInfo e,ArrayList<Product> pr){
+  public ProcessFiles(EmployeeInfo e, ArrayList<Product> pr) {
     p = Paths.get("/Users/brandonschultz/LineTests");
     p2 = Paths.get("TestResults.txt");
     p3 = p.resolve(p2);
     CreateDirectory();
-    try{
+    try {
       WriteFile(e);
       WriteFile(pr);
-    } catch (IOException e1){
+    } catch (IOException e1) {
       e1.printStackTrace();
     }
 
   }
 
-  private void CreateDirectory(){
-    if(Files.notExists(p)){
+  private void CreateDirectory() {
+    if (Files.notExists(p)) {
       try {
         Files.createDirectories(p);
         System.out.println("Directory Created");
@@ -49,28 +52,36 @@ public class ProcessFiles {
       }
     }
   }
+
+  /**
+   * @param emp Employee Info
+   * @throws IOException if file cant be written to
+   */
   public void WriteFile(EmployeeInfo emp) throws IOException {
 
 //    p2 = Paths.get(p.toUri() + "TestResults.txt");
 //    Files.write(p2,emp.toString().getBytes());
 
-    FileWriter  writer = new FileWriter(p3.toString(),true);
+    FileWriter writer = new FileWriter(p3.toString(), true);
     PrintWriter printWriter = new PrintWriter(writer);
-
 
     printWriter.println(emp.toString());
 
     printWriter.close();
   }
+
+  /**
+   * @param products array list of products
+   * @throws IOException if file cant be written to
+   */
   public void WriteFile(ArrayList<Product> products) throws IOException {
 //    p2 = Paths.get(p.toUri() + "TestResults.txt");
 //    Files.write(p2,products.toString().getBytes());
 
     //FileWriter  writer = new FileWriter(p3.toString(),true);
     File file = new File(p3.toString());
-    Writer writer = new OutputStreamWriter(new FileOutputStream(file),"UTF-8");
+    Writer writer = new OutputStreamWriter(new FileOutputStream(file), "UTF-8");
     PrintWriter printWriter = new PrintWriter(writer);
-
 
     printWriter.println(products.toString());
 

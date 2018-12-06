@@ -9,26 +9,30 @@ method defined in this classes in order to display the 3 variables.
 package com.company;
 
 public class Screen implements ScreenSpec {
+
   String resolution;
   int refreshrate;
   int responsetime;
 
-  public Screen(String resolution,int refreshrate,int responsetime){
+  public Screen(String resolution, int refreshrate, int responsetime) {
     this.resolution = resolution;
     this.refreshrate = refreshrate;
     this.responsetime = responsetime;
   }
 
-  public String getResolution(){
+  public String getResolution() {
     return resolution;
   }
-  public int getRefreshRate(){
+
+  public int getRefreshRate() {
     return refreshrate;
   }
-  public int getResponseTime(){
+
+  public int getResponseTime() {
     return responsetime;
   }
-  public String toString(){
+
+  public String toString() {
     return "Resolution : " + resolution + "\n"
         + "Refresh rate : " + refreshrate + "\n"
         + "Response time : " + responsetime + "\n";

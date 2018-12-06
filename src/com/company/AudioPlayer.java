@@ -15,6 +15,9 @@ import java.util.Collections;
 
 public class AudioPlayer extends Product implements MultimediaControl {
 
+  /**
+   * type of audio specification type of media
+   */
   String audioSpecification;
   ItemType mediaType;
 
@@ -40,9 +43,13 @@ public class AudioPlayer extends Product implements MultimediaControl {
     System.out.println("Next");
   }
 
+  /**
+   * @return ordered string of audio spec and media type
+   */
   public String toString() {
     return super.toString() + "Audio Spec : " + audioSpecification + "\n"
         + "Type : " + mediaType;
+
   }
 
 }

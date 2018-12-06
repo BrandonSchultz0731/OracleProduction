@@ -17,7 +17,7 @@ import java.util.Scanner;
 
 public class Main {
 
-  static Scanner scan = new Scanner(System.in,"UTF-8");
+  static Scanner scan = new Scanner(System.in, "UTF-8");
   static ArrayList<Product> products = new ArrayList<>();
   static boolean start = true, start1 = true;
   static String name;
@@ -108,23 +108,23 @@ public class Main {
     int refreshRate = 0, responseTime = 0;
     System.out.print("Please enter a screen resolution (ex. 720x1080): ");
     screenResolution = scan.next();
-    while(valid){
-      try{
+    while (valid) {
+      try {
         System.out.print("Please enter Refresh Rate: ");
         refreshRate = scan.nextInt();
         valid = false;
-      }catch (Exception e){
+      } catch (Exception e) {
         System.out.println("\nInvalid input. Please enter a number for refresh rate\n");
         scan.nextLine();
       }
     }
     valid = true;
-    while(valid){
-      try{
+    while (valid) {
+      try {
         System.out.print("Please enter response time: ");
         responseTime = scan.nextInt();
         valid = false;
-      }catch (Exception e){
+      } catch (Exception e) {
         System.out.println("\nInvalid input. Please enter a number for response time\n");
         scan.nextLine();
       }
